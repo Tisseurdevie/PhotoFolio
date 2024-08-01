@@ -5,16 +5,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+@font-face {
+  font-family: 'humane';
+  src: url('PhotoFolio\assets\font\Humane-VF.ttf') format('ttf')
+  font-weight: 400;
+  font-style: normal;
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Cardo",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "humane";
+  --heading-font: "humane",  sans-serif;
+  --nav-font: "Humane",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -787,9 +792,11 @@ section,
 }
 
 .hero h2 {
+  -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   margin: 0 0 10px 0;
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 80px;
+  font-weight: 900;
 }
 
 .hero h2 .underlight {
@@ -806,7 +813,6 @@ section,
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--accent-color);
   z-index: -1;
 }
 

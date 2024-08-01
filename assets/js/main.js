@@ -5,7 +5,13 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+document.addEventListener("DOMContentLoaded", function() {
+  // Ajoute la classe "fade-in-visible" pour lancer l'animation
+  var elements = document.querySelectorAll('.hero h2');
+  elements.forEach(function(element) {
+    element.classList.add('fade-in-visible');
+  });
+});
 (function() {
   "use strict";
 
