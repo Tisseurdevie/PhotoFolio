@@ -782,6 +782,13 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#backgroundvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .hero {
   width: 100%;
   min-height: 30vh;
@@ -848,6 +855,11 @@ section,
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .gallery .gallery-item {
   position: relative;
   overflow: hidden;
