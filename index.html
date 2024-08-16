@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: rgb(18, 18, 18)">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -73,28 +73,39 @@
   </header>
 
   <main class="main">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.4/build/spline-viewer.js" ></script>
-    <spline-viewer url="https://prod.spline.design/spVXnKS4myPY1Mnw/scene.splinecode" id="spline"></spline-viewer>
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.4/build/spline-viewer.js" ></script>
+    <spline-viewer url="https://prod.spline.design/spVXnKS4myPY1Mnw/scene.splinecode" id="spline"></spline-viewer> -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.13/build/spline-viewer.js"></script>
+<spline-viewer style="@media (max-width: 575px) {
+      visibility: hidden;
+        }"
+         loading-anim-type="spinner-small-dark" url="https://prod.spline.design/llyeW4gFTA4-MY0G/scene.splinecode" id="spline"></spline-viewer>
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- <section id="hero" class="hero section"> -->
       <!-- <video autoplay loop muted playsinline id="backgroundvideo"> 
         <source src="C:\Users\Pc_Chacal\Downloads\PhotoFolio\PhotoFolio\assets\img\gallery\canyon04.webm" type="video/webm">
       </video> -->
       <!-- <video src="C:\Users\Pc_Chacal\Downloads\PhotoFolio\PhotoFolio\assets\img\gallery\canyon04.webm" ></video> -->
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2>
-              <!-- <span>Je suis </span> -->
-              <span class="underlight">Rado Rakotoarimalanto </span><br>UI Designer<br><span>Réalisateur Artiste 3D</span></h2>
-            <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
-            <!-- <a href="contact.html" class="btn-get-started">Available for Hire<br></a> -->
+          <div  style="width: fit-content;" class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2 style="flex-wrap: wrap; color: rgba(0, 0, 0, 0);">
+               <div style="text-align: left">Rado</div>
+               <div style="text-align: left">Rakotoarimalanto</div>
+               <div style="text-align: right; font-weight: 100;"><em>UI Designer</em></div>
+               <div style="text-align: right; font-weight: 100;"><em>Réalisateur</em></div>
+               <div style="text-align: right; font-weight: 100;"><em>Artiste 3D</em></div>
+            </h2>
+            <p>Bienvenue sur mon site portfolio</p>
+            <a href="contact.html" class="btn-get-started">Available for Hire<br></a>
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section> -->
+
+    <!-- /Hero Section -->
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery section">

@@ -24,7 +24,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: rgb(0, 0, 0); /* Background color for the entire website, including individual sections */
+  --background-color: rgb(18, 18, 18); /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #27a776; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -36,8 +36,8 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: rgb(18, 18, 18); /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: rgb(18, 18, 18); /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: rgba(255, 255, 255, 0.5); /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -45,12 +45,12 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #1a1a1a;
+  --background-color: rgb(18, 18, 18);
   --surface-color: #343434;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: rgb(18, 18, 18);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -149,7 +149,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -796,7 +796,6 @@ h2 {
 # Hero Section
 --------------------------------------------------------------*/
 #spline {
-  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -982,7 +981,7 @@ h2 {
   min-height: 320px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
 }
 
@@ -1349,7 +1348,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.31s ease-in-out;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 40%);
   margin-right: 15px;
